@@ -1,7 +1,7 @@
 var ads = document.getElementById("ads");
 
 window.onload = function() {
-    ads.volume = 0.1;
+    ads.volume = 0.02;
 }
 
 var adsVol = document.getElementById("adsVol");

@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Youtube</title>
+    <link rel="icon" href="https://ouc.edu.iq/wp-content/uploads/2021/07/free-youtube-logo-icon-2431-thumb.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./youtube/css/bootstrap.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./youtube/css/style.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="./youtube/css/all.min.css">
+    <!-- GoogleFont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="leftSec">
+            <img src="./youtube/images/logo.png" alt="">
+        </div>
+        <div class="rightSec">
+            <form action="">
+                <input type="text" placeholder="Search">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <div class="rec">
+                    <i class="fa-solid fa-microphone-lines"></i>
+                </div>
+            </form>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-video"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-list"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-user"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="catContent" class="cat">
+        <button class="left"><i class="fa-solid fa-angle-left"></i></button>
+        <button class="right"><i class="fa-solid fa-angle-right"></i></button>
+        <div class="catContent">
+            <ul>
+                <li><a class="active" href="#">All</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">Computer programing</a></li>
+                <li><a href="#">Computer</a></li>
+                <li><a href="#">Television series</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Laughter</a></li>
+                <li><a href="#">Live</a></li>
+                <li><a href="#">Body language</a></li>
+                <li><a href="#">Mohamed Siddiq El-Minshawi</a></li>
+                <li><a href="#">Lo-fi</a></li>
+                <li><a href="#">Physics</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Martial Arts Movies</a></li>
+                <li><a href="#">Consumer Electronics</a></li>
+                <li><a href="#">Rapping</a></li>
+                <li><a href="#">Indie games</a></li>
+                <li><a href="#">Recently uploaded</a></li>
+                <li><a href="#">Watched</a></li>
+                <li><a data-important="true" href="#">Laughter</a></li>
+            </ul>
+        </div>
+        <span id="catSlider"><i id="sliderBtn" class="fa-solid fa-angle-down"></i></span>
+    </div>
+    <div class="content">
+        <aside class="overflow-auto">
+            <nav class="d-flex flex-column w-100 mt-3 mb-3 pr-2">
+                <a href="#" class="link active d-flex align-items-center p-3 pl-5">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <span class="ml-5">Home</span>
+                </a>
+                <a href="#" class="link d-flex align-items-center p-3 pl-5">
+                    <i class="fa-regular fa-compass"></i>
+                    <span class="ml-5">Explore</span>
+                </a>
+                <a href="#" class="link d-flex align-items-center p-3 pl-5">
+                    <i class="fa-solid fa-film"></i>
+                    <span class="ml-5">Shorts</span>
+                </a>
+                <a href="#" class="link d-flex align-items-center p-3 pl-5">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <span class="ml-5">Subscriptions</span>
+                </a>
+                <hr>
+                <a href="#" class="link d-flex align-items-center p-3 pl-5">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span class="ml-5">Library</span>
+                </a>
+                <a href="#" class="link d-flex align-items-center p-3 pl-5">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span class="ml-5">History</span>
+                </a>
+                <a href="#" class="link d-flex align-items-center p-3 pl-5">
+                    <i class="fa-solid fa-video"></i>
+                    <span class="ml-5">Your Videos</span>
+                </a>
+                <a href="#" class="link d-flex align-items-center p-3 pl-5">
+                    <i class="fa-regular fa-clock"></i>
+                    <span class="ml-5">Watch Later</span>
+                </a>
+                <a href="#" class="link d-flex align-items-center p-3 pl-5">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                    <span class="ml-5">Learn HTML In Arabic</span>
+                </a>
+                <a href="#" class="link d-flex align-items-center p-3 pl-5">
+                    <i class="fa-solid fa-angle-down"></i>
+                    <span class="ml-5">Show more</span>
+                </a>
+                <hr>
+                <p>Subscription</p>
+                <a href="#" class="link channel live d-flex align-items-center p-3 pl-5" data-stats="live">
+                    <img class="channelImage" src="./youtube/images/channel01.jpg">
+                    <span class="ml-5">Lofi Girl</span>
+                </a>
+                <a href="#" class="link channel live d-flex align-items-center p-3 pl-5" data-stats="live">
+                    <img class="channelImage" src="./youtube/images/channel02.jpg">
+                    <span class="ml-5">Elzero Web School</span>
+                </a>
+                <a href="#" class="link channel live d-flex align-items-center p-3 pl-5" data-stats="new">
+                    <img class="channelImage" src="./youtube/images/channel03.jpg">
+                    <span class="ml-5">فيلم في الخمسينة</span>
+                </a>
+                <a href="#" class="link channel live d-flex align-items-center p-3 pl-5" data-stats="new">
+                    <img class="channelImage" src="./youtube/images/channel04.jpg">
+                    <span class="ml-5">Abdelrahman Gamal</span>
+                </a>
+                <a href="#" class="link channel live d-flex align-items-center p-3 pl-5" data-stats="new">
+                    <img class="channelImage" src="./youtube/images/channel05.jpg">
+                    <span class="ml-5">AJ+ كبريت</span>
+                </a>
+                <a href="#" class="link channel live d-flex align-items-center p-3 pl-5" data-stats="new">
+                    <img class="channelImage" src="./youtube/images/channel06.jpg">
+                    <span class="ml-5">Saed Younes</span>
+                </a>
+                <a href="#" class="link channel live d-flex align-items-center p-3 pl-5" data-stats="">
+                    <img class="channelImage" src="./youtube/images/channel07.jpg">
+                    <span class="ml-5">Abdoh4Magic</span>
+                </a>
+                <a href="#" class="link d-flex align-items-center p-3 pl-5">
+                    <i class="fa-solid fa-angle-down"></i>
+                    <span class="ml-5">Show 66 more</span>
+                </a>
+                <hr>
+                <p>More From Youtube</p>
+                <a href="#" class="link d-flex align-items-center p-3 pl-5">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                    <span class="ml-5">YouTube Premium</span>
+                </a>
+                <a href="#" class="link d-flex align-items-center p-3 pl-5">
+                    <i class="fa-solid fa-chess-king"></i>
+                    <span class="ml-5">Gaming</span>
+                </a>
+                <a href="#" class="link d-flex align-items-center p-3 pl-5">
+                    <i class="fa-solid fa-satellite-dish"></i>
+                    <span class="ml-5">Live</span>
+                </a>
+                <a href="#" class="link d-flex align-items-center p-3 pl-5">
+                    <i class="fa-solid fa-basketball"></i>
+                    <span class="ml-5">Sports</span>
+                </a>
+                <hr>
+                <a href="#" class="link d-flex align-items-center p-3 pl-5">
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="ml-5">Settings</span>
+                </a>
+                <a href="#" class="link d-flex align-items-center p-3 pl-5">
+                    <i class="fa-regular fa-flag"></i>
+                    <span class="ml-5">Report history</span>
+                </a>
+                <a href="#" class="link d-flex align-items-center p-3 pl-5">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <span class="ml-5">Help</span>
+                </a>
+                <a href="#" class="link d-flex align-items-center p-3 pl-5">
+                    <i class="fa-solid fa-message"></i>
+                    <span class="ml-5">Send feedback</span>
+                </a>
+                <hr>
+                <div class="about">
+                    <p>About Press Copyright Contact us Creators Advertise Developers</p>
+                    <p>Terms Privacy Policy & Safety How YouTube works Test new features</p>
+                    <span>&copy; 2022 Google LLC</span>
+                </div>
+            </nav>
+        </aside>
+        <main class="w-100  overflow-auto">
+            <div class="ads">
+                <div class="adsContainer">
+                    <video autoplay muted loop id="ads">
+                        <source src="./youtube/images/ads.mp4" type="video/mp4">
+                    </video>
+                    <span id="adsVol">UnMute</span>
+                </div>
+            </div>
+            <div class="videosContainer d-flex flex-wrap">
+                <div class="video">
+                    <div class="image" data-time="17:19">
+                        <img src="https://i.ytimg.com/vi/6EIKkW5H9p4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCU-MVizqVlYofwXYLVQoo6zJSwdg" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLR2J0yfPnzxyHHLuLhhQwIoKfNaDm9enO0RwoWm=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">كيف ابدأ فى تصميم الجرافيكس؟ ما هي البرامج المطلوبه؟  اهم المصادر المجانية لتعلم البرامج؟</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Nour Design</a>
+                                <span data-view="696" data-viewCount="K" data-dateNum="1" data-date="year"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="19:27">
+                        <img src="https://i.ytimg.com/vi/AgxGZIKXD3c/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBvx9Btt8VXhoZTvBQdHV93IvQwow" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLSsoQp61hlA3q7nH1xt0Upi6mUZAToxhyFvFLymNg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">كيف تعصر فائدة أي كتاب؟</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">دروس أونلاين</a>
+                                <span data-view="197" data-viewCount="K" data-dateNum="12" data-date="days"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="14:13">
+                        <img src="https://i.ytimg.com/vi/HuuzBnf-_Ag/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAj18ifisK-PwCHfgmNEFr9Zyh6Ew" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLRJwOeCwBAmUaJmbS9R2DTdmWdxkqtfVeuEbDNwgg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">ميمز أفلام كرتون !! 😂😂🔥</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Abdoh4Magic</a>
+                                <span data-view="60" data-viewCount="K" data-dateNum="4" data-date="hours"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="6:53">
+                        <img src="https://i.ytimg.com/vi/FmIUk3bWGmU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDjD_sKeenD9GqKKeew6ckIeeNxuA" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLTHKPaCC8X70K4JHAeg_05JFL98z_wbnAPzWrgKIg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">Learn HTML In Arabic 2021 - #13 - Image And Deal With Paths</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Elzero Web School</a>
+                                <span data-view="166" data-viewCount="K" data-dateNum="1" data-date="year"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="">
+                        <img src="https://i.ytimg.com/vi/DWcJFNfaw9c/hq720_live.jpg?sqp=COjJyZEG-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD7jJRjo92eFULkUQZcaUKGEj-asg" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="true">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/qXwJcIl7ufH0x8skbCBBdACHCgRKuPxXRIR3AQCBxNolUiQ0OwOEdK3Qo9p7tiTGBAzq0nY0430=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">lofi hip hop radio - beats to sleep/chill to</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Lofi Girl</a>
+                                <span data-view="5.3" data-viewCount="K" data-dateNum="4" data-date="hours"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="8:32">
+                        <img src="https://i.ytimg.com/vi/Y6UB2N6T9tk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDzWKj2SN00WFdOHU2ir_DgY6AFyg" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLRoavJUlzJGnVl56DGNy1StFhAJd8cAKHeGu4J1WQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">الدحيح - مفارقة الإنستغرام</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">AJ+ كبريت</a>
+                                <span data-view="2.4" data-viewCount="M" data-dateNum="3" data-date="year"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="5:52">
+                        <img src="https://i.ytimg.com/vi/oVLTETdopeU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBhPMP2WcESBJPnPrNgKpRVQPchRA" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLR1suxGNaF0Bq9ZES6si1hDkqDvfcZI_6s-qZCsRQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">كل شخص لا يهتم بك سوف يحبك ويحترمك فوراً بعد تطبيق هذه الطريقة السحرية</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Saed Younes</a>
+                                <span data-view="27" data-viewCount="K" data-dateNum="1" data-date="day"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="4:22">
+                        <img src="https://i.ytimg.com/vi/PqC2UqGuKxY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCJULGtgTRl2UYo7kke711HLeRcvw" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/MPjwUFwAh4u5-9PzJS-NEJI32iIJRTkpaa3rxBT1lHs_bGYf4_xwSJTJaTQh9WR3xAjzf-CK_g=s88-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">Ahmed Kamel - Le3btek ( Official Music Video - 2022 ) احمد كامل - لعبتك</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Ahmed Kamel</a>
+                                <span data-view="4.1" data-viewCount="M" data-dateNum="1" data-date="month"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="14:44">
+                        <img src="https://i.ytimg.com/vi/AwlKoRY_76U/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCUiPoYSoODHmeDMS1wwNH--gemvg" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLRoavJUlzJGnVl56DGNy1StFhAJd8cAKHeGu4J1WQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">الدحيح - الهبد</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">AJ+ كبريت</a>
+                                <span data-view="2.7" data-viewCount="M" data-dateNum="3" data-date="year"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="0:58">
+                        <img src="https://i.ytimg.com/vi/ZtpnzLm4UhI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAt8zIlB4-vOOI9dQvxOb5x782V8Q" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLRWSC5wswDN-wAQw_JefghDwBN6qHF0gVxEHfLf8g=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">الانزلاق الغضروفي! ⛷</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Daily Sabry</a>
+                                <span data-view="462" data-viewCount="K" data-dateNum="9" data-date="days"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="20:36">
+                        <img src="https://i.ytimg.com/vi/MlJY0aq4f3Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAWda3lUJCqBYcigk7B33YWuU7oVw" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLSa_4Qx5L2pdIwNER2AO5GxNueCefy3ldbOX21qLQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">لعبة اللي بيكسب فيها بيبقى غني واللي بيخسر بيتقتل! ملخص مسلسل لعبة الحبار الجزء الأول </a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">فيلم في الخمسينة</a>
+                                <span data-view="14" data-viewCount="M" data-dateNum="5" data-date="months"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="8:13">
+                        <img src="https://i.ytimg.com/vi/0OR9zFH1Q2A/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBEf1oP0FTtrVohPkNLwpJzOxaOkA" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLQu87ZPeGluOco2EObrpI2cRN55-Hun_lH39EdogA=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">من داخل أوكرانيا - دقت طبول الحرب بين روسيا والغرب - Russia invading Ukraine 🇺🇦🇷🇺</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Joe HaTTab</a>
+                                <span data-view="6.1" data-viewCount="M" data-dateNum="3" data-date="weeks"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="17:19">
+                        <img src="https://i.ytimg.com/vi/6EIKkW5H9p4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCU-MVizqVlYofwXYLVQoo6zJSwdg" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLR2J0yfPnzxyHHLuLhhQwIoKfNaDm9enO0RwoWm=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">كيف ابدأ فى تصميم الجرافيكس؟ ما هي البرامج المطلوبه؟  اهم المصادر المجانية لتعلم البرامج؟</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Nour Design</a>
+                                <span data-view="696" data-viewCount="K" data-dateNum="1" data-date="year"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="19:27">
+                        <img src="https://i.ytimg.com/vi/AgxGZIKXD3c/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBvx9Btt8VXhoZTvBQdHV93IvQwow" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLSsoQp61hlA3q7nH1xt0Upi6mUZAToxhyFvFLymNg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">كيف تعصر فائدة أي كتاب؟</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">دروس أونلاين</a>
+                                <span data-view="197" data-viewCount="K" data-dateNum="12" data-date="days"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="14:13">
+                        <img src="https://i.ytimg.com/vi/HuuzBnf-_Ag/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAj18ifisK-PwCHfgmNEFr9Zyh6Ew" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLRJwOeCwBAmUaJmbS9R2DTdmWdxkqtfVeuEbDNwgg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">ميمز أفلام كرتون !! 😂😂🔥</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Abdoh4Magic</a>
+                                <span data-view="60" data-viewCount="K" data-dateNum="4" data-date="hours"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="6:53">
+                        <img src="https://i.ytimg.com/vi/FmIUk3bWGmU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDjD_sKeenD9GqKKeew6ckIeeNxuA" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLTHKPaCC8X70K4JHAeg_05JFL98z_wbnAPzWrgKIg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">Learn HTML In Arabic 2021 - #13 - Image And Deal With Paths</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Elzero Web School</a>
+                                <span data-view="166" data-viewCount="K" data-dateNum="1" data-date="year"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="">
+                        <img src="https://i.ytimg.com/vi/DWcJFNfaw9c/hq720_live.jpg?sqp=COjJyZEG-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD7jJRjo92eFULkUQZcaUKGEj-asg" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="true">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/qXwJcIl7ufH0x8skbCBBdACHCgRKuPxXRIR3AQCBxNolUiQ0OwOEdK3Qo9p7tiTGBAzq0nY0430=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">lofi hip hop radio - beats to sleep/chill to</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Lofi Girl</a>
+                                <span data-view="5.3" data-viewCount="K" data-dateNum="4" data-date="hours"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="8:32">
+                        <img src="https://i.ytimg.com/vi/Y6UB2N6T9tk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDzWKj2SN00WFdOHU2ir_DgY6AFyg" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLRoavJUlzJGnVl56DGNy1StFhAJd8cAKHeGu4J1WQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">الدحيح - مفارقة الإنستغرام</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">AJ+ كبريت</a>
+                                <span data-view="2.4" data-viewCount="M" data-dateNum="3" data-date="year"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="5:52">
+                        <img src="https://i.ytimg.com/vi/oVLTETdopeU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBhPMP2WcESBJPnPrNgKpRVQPchRA" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLR1suxGNaF0Bq9ZES6si1hDkqDvfcZI_6s-qZCsRQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">كل شخص لا يهتم بك سوف يحبك ويحترمك فوراً بعد تطبيق هذه الطريقة السحرية</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Saed Younes</a>
+                                <span data-view="27" data-viewCount="K" data-dateNum="1" data-date="day"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="4:22">
+                        <img src="https://i.ytimg.com/vi/PqC2UqGuKxY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCJULGtgTRl2UYo7kke711HLeRcvw" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/MPjwUFwAh4u5-9PzJS-NEJI32iIJRTkpaa3rxBT1lHs_bGYf4_xwSJTJaTQh9WR3xAjzf-CK_g=s88-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">Ahmed Kamel - Le3btek ( Official Music Video - 2022 ) احمد كامل - لعبتك</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Ahmed Kamel</a>
+                                <span data-view="4.1" data-viewCount="M" data-dateNum="1" data-date="month"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="14:44">
+                        <img src="https://i.ytimg.com/vi/AwlKoRY_76U/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCUiPoYSoODHmeDMS1wwNH--gemvg" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLRoavJUlzJGnVl56DGNy1StFhAJd8cAKHeGu4J1WQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">الدحيح - الهبد</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">AJ+ كبريت</a>
+                                <span data-view="2.7" data-viewCount="M" data-dateNum="3" data-date="year"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="0:58">
+                        <img src="https://i.ytimg.com/vi/ZtpnzLm4UhI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAt8zIlB4-vOOI9dQvxOb5x782V8Q" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLRWSC5wswDN-wAQw_JefghDwBN6qHF0gVxEHfLf8g=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">الانزلاق الغضروفي! ⛷</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Daily Sabry</a>
+                                <span data-view="462" data-viewCount="K" data-dateNum="9" data-date="days"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="20:36">
+                        <img src="https://i.ytimg.com/vi/MlJY0aq4f3Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAWda3lUJCqBYcigk7B33YWuU7oVw" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLSa_4Qx5L2pdIwNER2AO5GxNueCefy3ldbOX21qLQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">لعبة اللي بيكسب فيها بيبقى غني واللي بيخسر بيتقتل! ملخص مسلسل لعبة الحبار الجزء الأول </a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">فيلم في الخمسينة</a>
+                                <span data-view="14" data-viewCount="M" data-dateNum="5" data-date="months"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="8:13">
+                        <img src="https://i.ytimg.com/vi/0OR9zFH1Q2A/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBEf1oP0FTtrVohPkNLwpJzOxaOkA" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLQu87ZPeGluOco2EObrpI2cRN55-Hun_lH39EdogA=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">من داخل أوكرانيا - دقت طبول الحرب بين روسيا والغرب - Russia invading Ukraine 🇺🇦🇷🇺</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Joe HaTTab</a>
+                                <span data-view="6.1" data-viewCount="M" data-dateNum="3" data-date="weeks"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="17:19">
+                        <img src="https://i.ytimg.com/vi/6EIKkW5H9p4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCU-MVizqVlYofwXYLVQoo6zJSwdg" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLR2J0yfPnzxyHHLuLhhQwIoKfNaDm9enO0RwoWm=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">كيف ابدأ فى تصميم الجرافيكس؟ ما هي البرامج المطلوبه؟  اهم المصادر المجانية لتعلم البرامج؟</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Nour Design</a>
+                                <span data-view="696" data-viewCount="K" data-dateNum="1" data-date="year"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="19:27">
+                        <img src="https://i.ytimg.com/vi/AgxGZIKXD3c/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBvx9Btt8VXhoZTvBQdHV93IvQwow" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLSsoQp61hlA3q7nH1xt0Upi6mUZAToxhyFvFLymNg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">كيف تعصر فائدة أي كتاب؟</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">دروس أونلاين</a>
+                                <span data-view="197" data-viewCount="K" data-dateNum="12" data-date="days"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="14:13">
+                        <img src="https://i.ytimg.com/vi/HuuzBnf-_Ag/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAj18ifisK-PwCHfgmNEFr9Zyh6Ew" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLRJwOeCwBAmUaJmbS9R2DTdmWdxkqtfVeuEbDNwgg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">ميمز أفلام كرتون !! 😂😂🔥</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Abdoh4Magic</a>
+                                <span data-view="60" data-viewCount="K" data-dateNum="4" data-date="hours"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="6:53">
+                        <img src="https://i.ytimg.com/vi/FmIUk3bWGmU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDjD_sKeenD9GqKKeew6ckIeeNxuA" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLTHKPaCC8X70K4JHAeg_05JFL98z_wbnAPzWrgKIg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">Learn HTML In Arabic 2021 - #13 - Image And Deal With Paths</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Elzero Web School</a>
+                                <span data-view="166" data-viewCount="K" data-dateNum="1" data-date="year"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="">
+                        <img src="https://i.ytimg.com/vi/DWcJFNfaw9c/hq720_live.jpg?sqp=COjJyZEG-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD7jJRjo92eFULkUQZcaUKGEj-asg" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="true">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/qXwJcIl7ufH0x8skbCBBdACHCgRKuPxXRIR3AQCBxNolUiQ0OwOEdK3Qo9p7tiTGBAzq0nY0430=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">lofi hip hop radio - beats to sleep/chill to</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Lofi Girl</a>
+                                <span data-view="5.3" data-viewCount="K" data-dateNum="4" data-date="hours"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="8:32">
+                        <img src="https://i.ytimg.com/vi/Y6UB2N6T9tk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDzWKj2SN00WFdOHU2ir_DgY6AFyg" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLRoavJUlzJGnVl56DGNy1StFhAJd8cAKHeGu4J1WQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">الدحيح - مفارقة الإنستغرام</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">AJ+ كبريت</a>
+                                <span data-view="2.4" data-viewCount="M" data-dateNum="3" data-date="year"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="5:52">
+                        <img src="https://i.ytimg.com/vi/oVLTETdopeU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBhPMP2WcESBJPnPrNgKpRVQPchRA" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLR1suxGNaF0Bq9ZES6si1hDkqDvfcZI_6s-qZCsRQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">كل شخص لا يهتم بك سوف يحبك ويحترمك فوراً بعد تطبيق هذه الطريقة السحرية</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Saed Younes</a>
+                                <span data-view="27" data-viewCount="K" data-dateNum="1" data-date="day"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="4:22">
+                        <img src="https://i.ytimg.com/vi/PqC2UqGuKxY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCJULGtgTRl2UYo7kke711HLeRcvw" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/MPjwUFwAh4u5-9PzJS-NEJI32iIJRTkpaa3rxBT1lHs_bGYf4_xwSJTJaTQh9WR3xAjzf-CK_g=s88-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">Ahmed Kamel - Le3btek ( Official Music Video - 2022 ) احمد كامل - لعبتك</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Ahmed Kamel</a>
+                                <span data-view="4.1" data-viewCount="M" data-dateNum="1" data-date="month"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="14:44">
+                        <img src="https://i.ytimg.com/vi/AwlKoRY_76U/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCUiPoYSoODHmeDMS1wwNH--gemvg" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLRoavJUlzJGnVl56DGNy1StFhAJd8cAKHeGu4J1WQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">الدحيح - الهبد</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">AJ+ كبريت</a>
+                                <span data-view="2.7" data-viewCount="M" data-dateNum="3" data-date="year"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="0:58">
+                        <img src="https://i.ytimg.com/vi/ZtpnzLm4UhI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAt8zIlB4-vOOI9dQvxOb5x782V8Q" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLRWSC5wswDN-wAQw_JefghDwBN6qHF0gVxEHfLf8g=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">الانزلاق الغضروفي! ⛷</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Daily Sabry</a>
+                                <span data-view="462" data-viewCount="K" data-dateNum="9" data-date="days"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="20:36">
+                        <img src="https://i.ytimg.com/vi/MlJY0aq4f3Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAWda3lUJCqBYcigk7B33YWuU7oVw" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLSa_4Qx5L2pdIwNER2AO5GxNueCefy3ldbOX21qLQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">لعبة اللي بيكسب فيها بيبقى غني واللي بيخسر بيتقتل! ملخص مسلسل لعبة الحبار الجزء الأول </a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">فيلم في الخمسينة</a>
+                                <span data-view="14" data-viewCount="M" data-dateNum="5" data-date="months"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="8:13">
+                        <img src="https://i.ytimg.com/vi/0OR9zFH1Q2A/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBEf1oP0FTtrVohPkNLwpJzOxaOkA" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLQu87ZPeGluOco2EObrpI2cRN55-Hun_lH39EdogA=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">من داخل أوكرانيا - دقت طبول الحرب بين روسيا والغرب - Russia invading Ukraine 🇺🇦🇷🇺</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Joe HaTTab</a>
+                                <span data-view="6.1" data-viewCount="M" data-dateNum="3" data-date="weeks"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="17:19">
+                        <img src="https://i.ytimg.com/vi/6EIKkW5H9p4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCU-MVizqVlYofwXYLVQoo6zJSwdg" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLR2J0yfPnzxyHHLuLhhQwIoKfNaDm9enO0RwoWm=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">كيف ابدأ فى تصميم الجرافيكس؟ ما هي البرامج المطلوبه؟  اهم المصادر المجانية لتعلم البرامج؟</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Nour Design</a>
+                                <span data-view="696" data-viewCount="K" data-dateNum="1" data-date="year"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="19:27">
+                        <img src="https://i.ytimg.com/vi/AgxGZIKXD3c/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBvx9Btt8VXhoZTvBQdHV93IvQwow" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLSsoQp61hlA3q7nH1xt0Upi6mUZAToxhyFvFLymNg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">كيف تعصر فائدة أي كتاب؟</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">دروس أونلاين</a>
+                                <span data-view="197" data-viewCount="K" data-dateNum="12" data-date="days"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="14:13">
+                        <img src="https://i.ytimg.com/vi/HuuzBnf-_Ag/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAj18ifisK-PwCHfgmNEFr9Zyh6Ew" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLRJwOeCwBAmUaJmbS9R2DTdmWdxkqtfVeuEbDNwgg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">ميمز أفلام كرتون !! 😂😂🔥</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Abdoh4Magic</a>
+                                <span data-view="60" data-viewCount="K" data-dateNum="4" data-date="hours"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="6:53">
+                        <img src="https://i.ytimg.com/vi/FmIUk3bWGmU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDjD_sKeenD9GqKKeew6ckIeeNxuA" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLTHKPaCC8X70K4JHAeg_05JFL98z_wbnAPzWrgKIg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">Learn HTML In Arabic 2021 - #13 - Image And Deal With Paths</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Elzero Web School</a>
+                                <span data-view="166" data-viewCount="K" data-dateNum="1" data-date="year"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="">
+                        <img src="https://i.ytimg.com/vi/DWcJFNfaw9c/hq720_live.jpg?sqp=COjJyZEG-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD7jJRjo92eFULkUQZcaUKGEj-asg" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="true">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/qXwJcIl7ufH0x8skbCBBdACHCgRKuPxXRIR3AQCBxNolUiQ0OwOEdK3Qo9p7tiTGBAzq0nY0430=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">lofi hip hop radio - beats to sleep/chill to</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Lofi Girl</a>
+                                <span data-view="5.3" data-viewCount="K" data-dateNum="4" data-date="hours"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="8:32">
+                        <img src="https://i.ytimg.com/vi/Y6UB2N6T9tk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDzWKj2SN00WFdOHU2ir_DgY6AFyg" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLRoavJUlzJGnVl56DGNy1StFhAJd8cAKHeGu4J1WQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">الدحيح - مفارقة الإنستغرام</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">AJ+ كبريت</a>
+                                <span data-view="2.4" data-viewCount="M" data-dateNum="3" data-date="year"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="5:52">
+                        <img src="https://i.ytimg.com/vi/oVLTETdopeU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBhPMP2WcESBJPnPrNgKpRVQPchRA" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLR1suxGNaF0Bq9ZES6si1hDkqDvfcZI_6s-qZCsRQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">كل شخص لا يهتم بك سوف يحبك ويحترمك فوراً بعد تطبيق هذه الطريقة السحرية</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Saed Younes</a>
+                                <span data-view="27" data-viewCount="K" data-dateNum="1" data-date="day"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="4:22">
+                        <img src="https://i.ytimg.com/vi/PqC2UqGuKxY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCJULGtgTRl2UYo7kke711HLeRcvw" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/MPjwUFwAh4u5-9PzJS-NEJI32iIJRTkpaa3rxBT1lHs_bGYf4_xwSJTJaTQh9WR3xAjzf-CK_g=s88-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">Ahmed Kamel - Le3btek ( Official Music Video - 2022 ) احمد كامل - لعبتك</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Ahmed Kamel</a>
+                                <span data-view="4.1" data-viewCount="M" data-dateNum="1" data-date="month"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="14:44">
+                        <img src="https://i.ytimg.com/vi/AwlKoRY_76U/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCUiPoYSoODHmeDMS1wwNH--gemvg" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLRoavJUlzJGnVl56DGNy1StFhAJd8cAKHeGu4J1WQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">الدحيح - الهبد</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">AJ+ كبريت</a>
+                                <span data-view="2.7" data-viewCount="M" data-dateNum="3" data-date="year"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="0:58">
+                        <img src="https://i.ytimg.com/vi/ZtpnzLm4UhI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAt8zIlB4-vOOI9dQvxOb5x782V8Q" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLRWSC5wswDN-wAQw_JefghDwBN6qHF0gVxEHfLf8g=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">الانزلاق الغضروفي! ⛷</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Daily Sabry</a>
+                                <span data-view="462" data-viewCount="K" data-dateNum="9" data-date="days"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="20:36">
+                        <img src="https://i.ytimg.com/vi/MlJY0aq4f3Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAWda3lUJCqBYcigk7B33YWuU7oVw" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLSa_4Qx5L2pdIwNER2AO5GxNueCefy3ldbOX21qLQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">لعبة اللي بيكسب فيها بيبقى غني واللي بيخسر بيتقتل! ملخص مسلسل لعبة الحبار الجزء الأول </a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">فيلم في الخمسينة</a>
+                                <span data-view="14" data-viewCount="M" data-dateNum="5" data-date="months"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="8:13">
+                        <img src="https://i.ytimg.com/vi/0OR9zFH1Q2A/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBEf1oP0FTtrVohPkNLwpJzOxaOkA" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLQu87ZPeGluOco2EObrpI2cRN55-Hun_lH39EdogA=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">من داخل أوكرانيا - دقت طبول الحرب بين روسيا والغرب - Russia invading Ukraine 🇺🇦🇷🇺</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Joe HaTTab</a>
+                                <span data-view="6.1" data-viewCount="M" data-dateNum="3" data-date="weeks"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="17:19">
+                        <img src="https://i.ytimg.com/vi/6EIKkW5H9p4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCU-MVizqVlYofwXYLVQoo6zJSwdg" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLR2J0yfPnzxyHHLuLhhQwIoKfNaDm9enO0RwoWm=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">كيف ابدأ فى تصميم الجرافيكس؟ ما هي البرامج المطلوبه؟  اهم المصادر المجانية لتعلم البرامج؟</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Nour Design</a>
+                                <span data-view="696" data-viewCount="K" data-dateNum="1" data-date="year"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="19:27">
+                        <img src="https://i.ytimg.com/vi/AgxGZIKXD3c/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBvx9Btt8VXhoZTvBQdHV93IvQwow" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLSsoQp61hlA3q7nH1xt0Upi6mUZAToxhyFvFLymNg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">كيف تعصر فائدة أي كتاب؟</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">دروس أونلاين</a>
+                                <span data-view="197" data-viewCount="K" data-dateNum="12" data-date="days"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="14:13">
+                        <img src="https://i.ytimg.com/vi/HuuzBnf-_Ag/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAj18ifisK-PwCHfgmNEFr9Zyh6Ew" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLRJwOeCwBAmUaJmbS9R2DTdmWdxkqtfVeuEbDNwgg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">ميمز أفلام كرتون !! 😂😂🔥</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Abdoh4Magic</a>
+                                <span data-view="60" data-viewCount="K" data-dateNum="4" data-date="hours"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="6:53">
+                        <img src="https://i.ytimg.com/vi/FmIUk3bWGmU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDjD_sKeenD9GqKKeew6ckIeeNxuA" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLTHKPaCC8X70K4JHAeg_05JFL98z_wbnAPzWrgKIg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">Learn HTML In Arabic 2021 - #13 - Image And Deal With Paths</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Elzero Web School</a>
+                                <span data-view="166" data-viewCount="K" data-dateNum="1" data-date="year"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="">
+                        <img src="https://i.ytimg.com/vi/DWcJFNfaw9c/hq720_live.jpg?sqp=COjJyZEG-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD7jJRjo92eFULkUQZcaUKGEj-asg" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="true">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/qXwJcIl7ufH0x8skbCBBdACHCgRKuPxXRIR3AQCBxNolUiQ0OwOEdK3Qo9p7tiTGBAzq0nY0430=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">lofi hip hop radio - beats to sleep/chill to</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Lofi Girl</a>
+                                <span data-view="5.3" data-viewCount="K" data-dateNum="4" data-date="hours"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="8:32">
+                        <img src="https://i.ytimg.com/vi/Y6UB2N6T9tk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDzWKj2SN00WFdOHU2ir_DgY6AFyg" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLRoavJUlzJGnVl56DGNy1StFhAJd8cAKHeGu4J1WQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">الدحيح - مفارقة الإنستغرام</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">AJ+ كبريت</a>
+                                <span data-view="2.4" data-viewCount="M" data-dateNum="3" data-date="year"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="5:52">
+                        <img src="https://i.ytimg.com/vi/oVLTETdopeU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBhPMP2WcESBJPnPrNgKpRVQPchRA" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLR1suxGNaF0Bq9ZES6si1hDkqDvfcZI_6s-qZCsRQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">كل شخص لا يهتم بك سوف يحبك ويحترمك فوراً بعد تطبيق هذه الطريقة السحرية</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Saed Younes</a>
+                                <span data-view="27" data-viewCount="K" data-dateNum="1" data-date="day"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="4:22">
+                        <img src="https://i.ytimg.com/vi/PqC2UqGuKxY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCJULGtgTRl2UYo7kke711HLeRcvw" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/MPjwUFwAh4u5-9PzJS-NEJI32iIJRTkpaa3rxBT1lHs_bGYf4_xwSJTJaTQh9WR3xAjzf-CK_g=s88-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">Ahmed Kamel - Le3btek ( Official Music Video - 2022 ) احمد كامل - لعبتك</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Ahmed Kamel</a>
+                                <span data-view="4.1" data-viewCount="M" data-dateNum="1" data-date="month"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="14:44">
+                        <img src="https://i.ytimg.com/vi/AwlKoRY_76U/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCUiPoYSoODHmeDMS1wwNH--gemvg" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLRoavJUlzJGnVl56DGNy1StFhAJd8cAKHeGu4J1WQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">الدحيح - الهبد</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">AJ+ كبريت</a>
+                                <span data-view="2.7" data-viewCount="M" data-dateNum="3" data-date="year"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="0:58">
+                        <img src="https://i.ytimg.com/vi/ZtpnzLm4UhI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAt8zIlB4-vOOI9dQvxOb5x782V8Q" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLRWSC5wswDN-wAQw_JefghDwBN6qHF0gVxEHfLf8g=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">الانزلاق الغضروفي! ⛷</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Daily Sabry</a>
+                                <span data-view="462" data-viewCount="K" data-dateNum="9" data-date="days"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="20:36">
+                        <img src="https://i.ytimg.com/vi/MlJY0aq4f3Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAWda3lUJCqBYcigk7B33YWuU7oVw" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLSa_4Qx5L2pdIwNER2AO5GxNueCefy3ldbOX21qLQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">لعبة اللي بيكسب فيها بيبقى غني واللي بيخسر بيتقتل! ملخص مسلسل لعبة الحبار الجزء الأول </a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">فيلم في الخمسينة</a>
+                                <span data-view="14" data-viewCount="M" data-dateNum="5" data-date="months"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="image" data-time="8:13">
+                        <img src="https://i.ytimg.com/vi/0OR9zFH1Q2A/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBEf1oP0FTtrVohPkNLwpJzOxaOkA" alt="">
+                    </div>
+                    <div class="details d-flex" data-live="false">
+                        <div class="channelImage">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLQu87ZPeGluOco2EObrpI2cRN55-Hun_lH39EdogA=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        </div>
+                        <div class="title d-flex flex-column">
+                            <a href="#" class="titleLink">من داخل أوكرانيا - دقت طبول الحرب بين روسيا والغرب - Russia invading Ukraine 🇺🇦🇷🇺</a>
+                            <div class="description">
+                                <a href="#" class="channelName" data-verified="true">Joe HaTTab</a>
+                                <span data-view="6.1" data-viewCount="M" data-dateNum="3" data-date="weeks"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./youtube/javascript/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+</body>
+</html>
